@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Tyrellsys: Demo</title>
+        <title>SQL Improvement Logic Test</title>
 
         <?php require 'requires/font.php'; ?>
         <?php require 'requires/css-bootstrap.php'; ?>
