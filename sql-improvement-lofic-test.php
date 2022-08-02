@@ -67,7 +67,7 @@
                                         <li><code>ReqQualifications</code></li>
                                     </ul>
 
-                                    <p>Since we only wanted data from <code>Jobs, JobCategories, JobTypes</code> tables, seems approprite to only filter from the 3 tables only.</p>
+                                    <p>Since we only wanted data from <code>Jobs, JobCategories, JobTypes</code> tables, seems approprite to only join and filter from the 3 tables.</p>
                                     <p>The search query also <code>キャビンアテンダント (Cabin attendant)</code>, means the removed <code>LEFT JOIN</code> are not necessarily required.</p>
                                 </div>
                             </div>
