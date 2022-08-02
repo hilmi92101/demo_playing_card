@@ -39,15 +39,16 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                     IMPROVED SQL #1
                                 </button>
                             </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
                                     <code><?php echo "<pre>".$improved_sql_1."</pre>"; ?></code>
 
                                     <hr>
+                                    <h5>1) Reduce the join statements in the query.</h5>
                                     <h6><code>LEFT JOIN</code> from the following tables are removed:</h6>
                                     <ul>
                                         <li><code>jobspersonalities</code></li>
@@ -65,6 +66,7 @@
                                         <li><code>jobsreqqualifications</code></li>
                                         <li><code>ReqQualifications</code></li>
                                     </ul>
+
                                     <p>Since we only wanted data from <code>Jobs, JobCategories, JobTypes</code> tables, seems approprite to only filter from the 3 tables only.</p>
                                     <p>The search query also <code>キャビンアテンダント (Cabin attendant)</code>, means the removed <code>LEFT JOIN</code> are not necessarily required.</p>
                                 </div>
